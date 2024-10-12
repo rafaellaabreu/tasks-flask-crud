@@ -27,7 +27,7 @@ def create_task():
     # print para verificar se os dados estavam sendo recebidos corretamente
     print(tasks)
     # retornar a mensagem de sucesso em formato JSON usando o método jsonify
-    return jsonify({"message": "Nova tarefa criada com sucesso!"})
+    return jsonify({"message": "Nova tarefa criada com sucesso!", "id": new_task.id})
 
 ##### funcionalidade de leitura (READ)
 
